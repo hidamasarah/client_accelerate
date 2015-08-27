@@ -1,16 +1,3 @@
-function theme_enqueue_styles() {
-
-    $parent_style = 'parent-style';
-
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '../accelerate-theme/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '../accelerate-theme/style.css',
-        array( $parent_style )
-    );
-}
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
-
 <?php
 /**
  * Accelerate Marketing Child functions and definitions
@@ -37,6 +24,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
+
 
 function create_custom_post_types() {
     register_post_type( 'case_studies',

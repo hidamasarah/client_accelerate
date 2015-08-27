@@ -503,6 +503,11 @@ h1 {
 	list-style-type:none;
 }
 
+#masthead nav ul li {
+    float:left;
+    margin: -25px 10px 0 10px;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -1218,4 +1223,30 @@ section .navigation {
 
 a.button, a.button:link {
 	color:white;
+
+}
+
+
+/* Case Studies Styles */
+
+article.case-study {
+    margin: 40px 0 0;
+    
+}
+
+aside.case-study-sidebar {
+    float: left;
+    width: 314px;
+    margin: 0 40px 0 0;
+}
+    
+div.case-study-images {
+    float:right;
+    width:606px;
+    
+}
+
+div.case-study-images img {
+    margin-bottom: 50px;
+    border: 1px solid #dddddd
 }
