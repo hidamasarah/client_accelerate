@@ -1236,14 +1236,15 @@ article.case-study {
 
 aside.case-study-sidebar {
     float: left;
-    width: 314px;
     margin: 0 40px 0 0;
+    width: 30%;
+
 }
     
 div.case-study-images {
     float:right;
-    width:606px;
-    
+    width:60%;
+
 }
 
 div.case-study-images img {

@@ -51,3 +51,25 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+.individual-featured-work {
+    display:inline;
+    float:left;
+    margin-right:40px;
+    
+    
+}
+
+.homepage-featured-work {
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+
+.site-content {
+    margin: 100px;
+}
+
+.featured-work h4 {
+    text-align:center;
+}
