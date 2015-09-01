@@ -73,3 +73,27 @@
 .featured-work h4 {
     text-align:center;
 }
+
+.featured-work p {
+    margin: 0;
+}
+
+
+h6 {
+	font-size: 14px;
+	line-height: 1.5;
+    font-weight:400;
+    font-family: Montserrat;
+    color:darkgrey;
+    margin: 0;
+    
+}
+
+
+h7 {
+    font-family: Montserrat;
+    font-weight:700;
+}
+    
+    
+}

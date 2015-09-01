@@ -18,42 +18,30 @@ get_header(); ?>
 		<div id="content" role="main">
 			<?php while ( have_posts() ) : the_post(); 
                 $image_1 = get_field("image_1");
-                    $size ="medium";
-                $services = get_field("services"); 
-                $client = get_field("client");    
+                    $size ="full";
+                $services = get_field("services");    
                 $link = get_field("site_link");
             
             ?>
              <article class="case-study">  
-
-                <aside class="case-study-sidebar">
-                       
+                 <aside class="case-study-sidebar">
                     <h2><a href="<?php echo $link; ?>"><?php the_title(); ?></a></h2>
-                <h5><?php echo $services; ?></h5>
-                <h6>Client:<?php echo $client; ?></h6>
-                     <p><a href="<?php echo $link; ?>">View the project</a></p>
-            
-         
+                     <h6><?php echo $services; ?></h6>
+                     <p class="featured-work"><?php the_excerpt(); ?></p>
+                     <h7><a href="<?php echo $link; ?>">View Project ></h7> </a>
                     
-				<?php the_excerpt(); ?>
-               
                 </aside>    
                 <div class="case-study-images">
                   
-                    <figure>
-                        <?php echo wp_get_attachment_image($image_1, $size); ?>
-                    </figure>
-
-                </div>
-                    
-            </article>         
+                  
+                        <?php if($image_1) {
+                        echo wp_get_attachment_image($image_1, $size );
+                     } ?>
+                  
+                </div>         
+            </article> 
             
-            
-            
-				<?php the_content(); ?>
-          
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
+    <?php endwhile; // end of the loop. ?>
+</div><!-- #content -->
+</div><!-- #primary -->
 <?php get_footer(); ?>

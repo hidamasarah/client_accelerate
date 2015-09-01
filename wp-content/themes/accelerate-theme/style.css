@@ -132,6 +132,9 @@ h5 {
 h6 {
 	font-size: 16px;
 	line-height: 1.5;
+    font-weight:400;
+    font-family: Montserrat;
+    color:darkgrey;
 }
 
 address {
@@ -1231,13 +1234,14 @@ a.button, a.button:link {
 
 article.case-study {
     margin: 40px 0 0;
+    clear:both;
     
 }
 
 aside.case-study-sidebar {
-    float: left;
     margin: 0 40px 0 0;
     width: 30%;
+    float:left;
 
 }
     
