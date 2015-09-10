@@ -97,3 +97,50 @@ h7 {
     
     
 }
+
+
+/*  Services on About Page */
+
+.service {
+    clear:both;
+}
+
+.service-description {
+    float:right;
+    width:50%;
+}
+
+.service-images {
+    float:left;
+    width:40%;
+}
+
+.service:nth-child(even) .service-description {
+    float: left;
+}
+
+.service:nth-child(even) .service-images {
+    float:right;   
+}
+
+.service-list {
+    margin:auto;
+    width: 70%;
+}
+
+/* About Page */
+
+.about-page {
+    background:url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height:200px;
+    margin: 0 0 80px;
+    padding: 100px 0;
+}
+
+.about-services h4 {
+    text-align: center;
+}
+
+    
+    
+    
