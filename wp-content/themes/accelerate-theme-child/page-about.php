@@ -51,10 +51,10 @@ get_header(); ?>
             <h2><?php the_title(); ?></h2>    
             <p class="featured-work"><?php the_excerpt(); ?></p>
         </div>        
-			
+    </div>
         <?php endwhile; // end of the loop. ?>
         <?php wp_reset_query(); // resets the altered query back to the original ?>
-            </ul>
+
     </div>
 
 
